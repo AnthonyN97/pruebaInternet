@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top {
+    background-color: #f0f0f0;
+    height: 15%;
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+}
+
+.bottom-left, .bottom-right {
+    flex: 1;
+    display: flex;
+}
+
+.bottom-left {
+    background-color: #d1e7dd;
+}
+
+.bottom-right {
+    background-color: #f8d7da;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trofeo {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.trofeo:hover {
+    transform: scale(1.1);
+}
+
+.trofeo img {
+    padding-left: 20%;
+    flex: 0 0 50px;
+    margin-right: 10px;
+}
+
+.trofeo .nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.trofeo .descripcion {
+    font-size: 16px;
+    color: #666;
+}
