@@ -6,19 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <title>Prueba</title>
 </head>
 
 <body>
-    <div class="top">
-        top
-    </div>
-    <div class="bottom">
-        <div class="bottom-left">
-            bottom left
+    <div class="content">
+        <div class="seccion">
+            <div class="slides">
+                <div class="slide">
+                    <div class="slide__content">
+                        <img class="imageCarrousel"
+                            src="https://external-preview.redd.it/ayaka-genshin-impact-v0-e43oJ7h3JIzb7aOTkRqSsKJ5ToQGuZj8Rk7FhYShtZg.jpg?auto=webp&s=195c0dcf8d15176b2ec92f0d766cd9475a089b64"
+                            alt="Evento 1"/>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__content">
+                        <img class="imageCarrousel"
+                            src="https://external-preview.redd.it/ayaka-genshin-impact-v0-e43oJ7h3JIzb7aOTkRqSsKJ5ToQGuZj8Rk7FhYShtZg.jpg?auto=webp&s=195c0dcf8d15176b2ec92f0d766cd9475a089b64"
+                            alt="Evento 2"/>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__content">
+                        slice 3
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__content">
+                        <img class="imageCarrousel"
+                            src="https://th.bing.com/th/id/OIP.bWHa6bsld3hCvLAr2SIVMgHaLO?w=600&h=910&rs=1&pid=ImgDetMain"
+                            alt="Evento 4"/>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <input type="radio" name="controls" id="slide_1" onchange="onSlideChange(this)" checked="checked" />
+                <label for="slide_1" class="control"></label>
+                <input type="radio" name="controls" id="slide_2" onchange="onSlideChange(this)" />
+                <label for="slide_2" class="control">
+                    <p></p>
+                </label>
+                <input type="radio" name="controls" id="slide_3" onchange="onSlideChange(this)" />
+                <label for="slide_3" class="control">
+                    <p></p>
+                </label>
+                <input type="radio" name="controls" id="slide_4" onchange="onSlideChange(this)" />
+                <label for="slide_4" class="control">
+                    <p></p>
+                </label>
+                <input type="checkbox" id="play" onchange="autoSlideShow(this)" />
+                <label for="play" class="control__play">
+                    <svg class="progressbar" viewBox="0 0 160 160">
+                        <circle cx="70" cy="70" r="70" class="progressbar__svg shadow"></circle>
+                        <polygon points="70,50 110,80 70,110" fill="currentColor" class="svg__pause" />
+                        <rect x="60" y="50" width="15" height="60" fill="currentColor" class="svg__play" />
+                        <rect x="85" y="50" width="15" height="60" fill="currentColor" class="svg__play" />
+                    </svg>
+                </label>
+            </div>
         </div>
-        <div class="bottom-right" id="trofeos">
-
-        </div>
+        <div class="bottom-middle">123</div>
+        <div class="seccion" id="trofeos"></div>
     </div>
 </body>
 
