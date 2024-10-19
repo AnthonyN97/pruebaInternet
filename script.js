@@ -1,6 +1,7 @@
+//Seccion de los trofeos
 document.addEventListener("DOMContentLoaded", function () {
   const trofeos = [
-    { nombre: "Trofeo de Oro", descripcion: "Premio al mejor rendimiento", emoji: "🥇" },
+    { nombre: "Trofeo del mejor cliente", descripcion: "Premio al mejor rendimiento", emoji: "🥇" },
     { nombre: "Trofeo de Plata", descripcion: "Premio al segundo lugar", emoji: "🥈" },
     { nombre: "Trofeo de Bronce", descripcion: "Premio al tercer lugar", emoji: "🥉" },
     { nombre: "Trofeo de Participación", descripcion: "Premio a la participación", emoji: "🏆" },
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//Seccion de los slides
 
 let iID, currentSlide = 1, totalSlides = 4;
 
