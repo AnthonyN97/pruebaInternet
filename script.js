@@ -15,6 +15,9 @@ const trofeos = [
   { nombre: "Trofeo de Esfuerzo", descripcion: "Premio al esfuerzo", emoji: "🏆" },
   { nombre: "Trofeo de Esfuerzo", descripcion: "Premio al esfuerzo", emoji: "🏆" },
   { nombre: "Trofeo de Participación", descripcion: "Premio a la participación", emoji: "🏆" },
+  { nombre: "Trofeo de Participación", descripcion: "Premio a la participación", emoji: "🏆" },
+  { nombre: "Trofeo de Participación", descripcion: "Premio a la participación", emoji: "🏆" },
+  { nombre: "Trofeo de Participación", descripcion: "Premio a la participación", emoji: "🏆" },
 ];
 
 //Seccion de los trofeos
