@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <title>Prueba</title>
 </head>
 
@@ -20,11 +21,14 @@
         <div class="bottom-middle" id="trofeos">
         </div>
         <div class="seccion_2">
-            <iframe class="videoYoutube" src="https://www.youtube.com/embed/Y0ywrp-EBXY?autoplay=1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allow="autoplay" allowfullscreen>
-            </iframe>
+            <div class="videoWrapper">
+                <iframe id="videoYoutube" class="videoYoutube"
+                    src="https://www.youtube.com/embed/Y0ywrp-EBXY?fs=0&autoplay=1&rel=0&showinfo=0&modestbranding=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                    allow="autoplay">
+                </iframe>
+            </div>
         </div>
     </div>
 </body>
