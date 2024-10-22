@@ -1,6 +1,10 @@
 //listas
-//en esta seccion van las urls de las imagenes con "," justo despues de cada url
-const urls = 'https://lh3.googleusercontent.com/pw/AP1GczNcg14QTYnLz67woS0moDn76ZJyQRRSsu2sd6Uwb_Ru73ohEv8mMZYlIsjR1lHdlH5vLCl6ANgBawDNAG8ldqBZcyy45Lo7tITwCAmtd_q52BzVR6o=w2400,https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-6/462787172_1127566562275453_8540253778161777727_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH4GkMDtyZCvhJlDbolyQIQXdAvWqgtl1Nd0C9aqC2XU7xKN-aBR2E-kkSX576H0ZMLQf4y_YyLU5Tp_gQyFrmt&_nc_ohc=HJSZPJf7YaUQ7kNvgHXGoan&_nc_ht=scontent.faqp3-1.fna&_nc_gid=Ax_-tkhzLcv_H71dG9PFfLk&oh=00_AYCwz47zGVnTVloDzX8Mp1LGRHj2XOS2-Hc_JctWA4OeLg&oe=671B052E,https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-6/462711287_1128225752209534_4836917110832899732_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEu-k2iHxb7krvU2y9feA1JzdU7HnJ3GfHN1TsecncZ8atIKXEQg84Kib9cIUGe77kD9aZOk9jZWQ7rwE3J4Shr&_nc_ohc=QMW6vb5BYWkQ7kNvgFTErJ8&_nc_ht=scontent.faqp3-1.fna&_nc_gid=Ar5kuN-9mcX2E7xasdKnJAv&oh=00_AYCtpn9s8fuj1hQFn_3Wadg0o-LY94qUXmAkOpK7UuqbMQ&oe=671B0922,https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-1/454908537_1083298923368884_5031723277163585488_n.jpg?stp=c137.0.693.693a_dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=f4b9fd&_nc_eui2=AeF_1mJ5utXBsgckYJmzi0VVf5AsNNdzK-x_kCw013Mr7PE5EfpGBBtAC2kviGGBLZpFpFHOfCts-grr-o-BdTH6&_nc_ohc=QfAzN3tDjp0Q7kNvgEZ_os8&_nc_ht=scontent.faqp3-1.fna&_nc_gid=Ai6_5UxwKGJjKnr8tnwlzo3&oh=00_AYAl_egCWo5cBkxuNjTVxiulPdIYgOTlwSrCwL1BuVtMTg&oe=671AE55A';
+const imagenes = [
+  'https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-6/462787172_1127566562275453_8540253778161777727_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH4GkMDtyZCvhJlDbolyQIQXdAvWqgtl1Nd0C9aqC2XU7xKN-aBR2E-kkSX576H0ZMLQf4y_YyLU5Tp_gQyFrmt&_nc_ohc=HJSZPJf7YaUQ7kNvgHXGoan&_nc_ht=scontent.faqp3-1.fna&_nc_gid=Ax_-tkhzLcv_H71dG9PFfLk&oh=00_AYCwz47zGVnTVloDzX8Mp1LGRHj2XOS2-Hc_JctWA4OeLg&oe=671B052E',
+  'https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-6/462711287_1128225752209534_4836917110832899732_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEu-k2iHxb7krvU2y9feA1JzdU7HnJ3GfHN1TsecncZ8atIKXEQg84Kib9cIUGe77kD9aZOk9jZWQ7rwE3J4Shr&_nc_ohc=QMW6vb5BYWkQ7kNvgFTErJ8&_nc_ht=scontent.faqp3-1.fna&_nc_gid=Ar5kuN-9mcX2E7xasdKnJAv&oh=00_AYCtpn9s8fuj1hQFn_3Wadg0o-LY94qUXmAkOpK7UuqbMQ&oe=671B0922',
+  'https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-1/454908537_1083298923368884_5031723277163585488_n.jpg?stp=c137.0.693.693a_dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=f4b9fd&_nc_eui2=AeF_1mJ5utXBsgckYJmzi0VVf5AsNNdzK-x_kCw013Mr7PE5EfpGBBtAC2kviGGBLZpFpFHOfCts-grr-o-BdTH6&_nc_ohc=QfAzN3tDjp0Q7kNvgEZ_os8&_nc_ht=scontent.faqp3-1.fna&_nc_gid=Ai6_5UxwKGJjKnr8tnwlzo3&oh=00_AYAl_egCWo5cBkxuNjTVxiulPdIYgOTlwSrCwL1BuVtMTg&oe=671AE55A'
+];
+
 //aqui van los trofeos
 const trofeos = [
   { nombre: "Trofeo del mejor cliente", descripcion: "Premio al mejor rendimiento", emoji: "" },
@@ -22,11 +26,6 @@ const youtubeVideoId = 'Cunvu8b7rj0';
 
 
 //Todo codigo
-const urlsArray = urls.trim().split(',');
-const imagenes = urlsArray.map((url, index) => ({
-  src: url.trim(),
-  alt: `Evento ${index + 1}`
-}));
 
 document.getElementById('body').style.backgroundImage = `url(${backgroundUrl})`;
 
@@ -84,13 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".slides");
   const controlsContainer = document.querySelector(".controls");
 
-  imagenes.forEach((imagen, index) => {
+  imagenes.forEach((src, index) => {
     // Crear los slides
     const slide = document.createElement("div");
     slide.className = "slide";
     slide.innerHTML = `
       <div class="slide__content">
-        <img class="imageCarrousel" src="${imagen.src}" alt="${imagen.alt}">
+        <img class="imageCarrousel" src="${src}" alt="Evento ${index + 1}">
       </div>
     `;
     container.appendChild(slide);
