@@ -1,29 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const trofeos = [
-        { nombre: "Trofeo de Oro", descripcion: "Premio al mejor rendimiento", emoji: "🥇" },
-        { nombre: "Trofeo de Plata", descripcion: "Premio al segundo lugar", emoji: "🥈" },
-        { nombre: "Trofeo de Bronce", descripcion: "Premio al tercer lugar", emoji: "🥉" },
-        { nombre: "Trofeo de Participación", descripcion: "Premio a la participación", emoji: "🏆" },
-        { nombre: "Trofeo de Esfuerzo", descripcion: "Premio al esfuerzo", emoji: "🏆" },
-        { nombre: "Trofeo de Innovación", descripcion: "Premio a la innovación", emoji: "🏆" },
-        { nombre: "Trofeo de Creatividad", descripcion: "Premio a la creatividad", emoji: "🏆" },
-        { nombre: "Trofeo de Liderazgo", descripcion: "Premio al liderazgo", emoji: "🏆" },
-        { nombre: "Trofeo de Colaboración", descripcion: "Premio a la colaboración", emoji: "🏆" },
-        { nombre: "Trofeo de Logro", descripcion: "Premio al logro", emoji: "🏆" }
-    ];
+const backgroundUrl = 'https://lh3.googleusercontent.com/pw/AP1GczMoiBf-WFCW5WCNMqzY7In49TniluNFlblU0mlSOotdMAwmAnvH-dbcvw88vjkomZm5dVsBDJ5Jx-StCIF76Q2JpGJyDYj8EHx4FFk2r8eBn_2mDXE=w2400';
+const videoId = "Cunvu8b7rj0";
 
-    const container = document.getElementById("trofeos");
-
-    trofeos.forEach(trofeo => {
-        const item = document.createElement("div");
-        item.className = "trofeo";
-        item.innerHTML = `
-            <span class="emoji">${trofeo.emoji}</span>
-            <div>
-                <div class="nombre">${trofeo.nombre}</div>
-                <div class="descripcion">${trofeo.descripcion}</div>
-            </div>
-        `;
-        container.appendChild(item);
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('body').style.backgroundImage = `url(${backgroundUrl})`;
+  const youtubeUrl = `https://www.youtube.com/embed/${youtubeVideoId}?fs=0&autoplay=1&rel=0&showinfo=0&modestbranding=1&controls=0&loop=1`;
+  document.getElementById('videoYoutube').src = youtubeUrl;
 });
